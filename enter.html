@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уличные гонки</title>
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="enter.css">
+    <script type="text/javascript" src="enter.js"></script>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tektur">
+   
+</head>
+<body>
+    <div class="container"> 
+
+        
+        <form action="display2.html" id="form">
+            
+                <div class="title">Возвращение в гонку</div> 
+                <div> 
+
+                    <label for="username">Ник</label>
+                    <i class="fas fa-user"></i>
+                    
+                    <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Доминик Торетто"
+                    required
+                    minlength="1"
+                    maxlength="30"
+                    />
+                    
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                    
+                    <div class="error">
+
+
+                    </div>
+
+                </div>
+
+                <div> 
+                    <label for="email">Почта</label>
+                    <i class="far fa-envelope"></i>
+                    
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="shumaher777@gmail.com"
+                    required
+                    minlength="5"
+                    maxlength="30"
+                    />
+                    
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                    
+                    <div class="error"></div>
+
+                </div>
+
+                <div class="password_full"> 
+
+                    <div mainpass> 
+                    
+                    <label for="password">Пароль</label>
+                     <i class="fas fa-lock"></i>
+                     
+                     <input
+                     type="password"
+                     name="password"
+                     id="password"
+                     placeholder="Ваш пароль"
+                     required
+                     />
+
+                     <i class="far fa-solid fa-eye" id="togglePassword"></i>
+                     
+                     <i class="fas fa-exclamation-circle failure-icon"></i>
+                     <i class="far fa-check-circle success-icon"></i>
+                     
+                     <div class="error"></div>
+
+                    </div>
+                    
+                </div>
+
+                <button class="btn" type="submit">Войти</button>
+
+                <div id="finaltext"></div>
+        </form>
+    </div>
+    
+</body>
+</html>

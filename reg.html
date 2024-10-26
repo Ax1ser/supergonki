@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="reg.css">
+    <script type="text/javascript" src="reg.js"></script>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tektur">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+   
+</head>
+<body>
+  <div class="bg"></div>
+    <div class="container"> 
+        
+        <form action="display.html" id="form">
+            
+                <div class="title">Регистрация на гонку</div> 
+                <div> 
+
+                    <label for="username">Ник</label>
+                    <i class="fas fa-user"></i>
+                    
+                    <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Доминик Торетто"
+                    required
+                    minlength="1"
+                    maxlength="30"
+                    />
+                    
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                    
+                    <div class="error"></div>
+
+                </div>
+
+                <div> 
+                    <label for="email">Почта</label>
+                    <i class="far fa-envelope"></i>
+                    
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="shumaher777@gmail.com"
+                    required
+                    minlength="5"
+                    maxlength="30"
+                    />
+                    
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-check-circle success-icon"></i>
+                    
+                    <div class="error"></div>
+
+                </div>
+
+                <div class="password_full"> 
+
+                    <div class="mainpass"> 
+                    
+                    <label for="password">Пароль</label>
+                     <i class="fas fa-lock"></i>
+                     
+                     <input
+                     type="password"
+                     name="password"
+                     id="password"
+                     placeholder="Samiymoschniyparolvmire2007!"
+                     required
+                     minlength="8"
+                     maxlength="30"
+                     />
+                     <i class="far fa-solid fa-eye" id="togglePassword"></i>
+                     
+                     <i class="fas fa-exclamation-circle failure-icon"></i>
+                     <i class="far fa-check-circle success-icon"></i>
+                     
+                     <div class="error"></div>
+
+                    </div>
+
+                    <div class="confirmpass"> 
+                    
+                        <label for="confirm_password">Подтверждение пароля</label>
+                         <i class="fas fa-lock"></i>
+                         
+                         <input
+                         type="password"
+                         name="confirm_password"
+                         id="confirm_password"
+                         placeholder="Тут должен быть твой пароль"
+                         required
+                         minlength="8"
+                         maxlength="30"
+                         />
+                         <i class="far fa-solid fa-eye" id="togglePassword"></i>
+                         
+                         <i class="fas fa-exclamation-circle failure-icon"></i>
+                         <i class="far fa-check-circle success-icon"></i>
+                         
+                         <div class="error"></div>
+    
+                    </div>
+                </div>
+
+                  <div class="antiDDOS"> 
+
+                    <div class="check"> 
+                        <p> Пароль должен содержать: </p>
+                        <ul class="requirement-list">
+                            <li>
+                              <i class="fas fa-solid fa-circle"></i>
+                              <span> Минимум 8 символов </span>
+                            </li>
+                            <li>
+                              <i class="fas fa-solid fa-circle"></i>
+                              <span>Цифру (0...9)</span>
+                            </li>
+                            <li>
+                              <i class="fas fa-solid fa-circle"></i>
+                              <span>Маленькую букву (a...z)</span>
+                            </li>
+                            <li>
+                              <i class="fas fa-solid fa-circle"></i>
+                              <span> Большую букву (A...Z)</span>
+                            </li>
+                            <li>
+                              <i class="fas fa-solid fa-circle"></i>
+                              <span>Специальный символ (!...$)</span>
+                            </li>
+                          </ul>
+                    </div>
+
+                     <div class="captcha"> 
+                        <h1> Введите капчу:</h1>
+                        <div class="captcha-place">
+                          <div class="captcha-image">
+                            <img src="captcha-bg.png" alt="Captcha Background">
+                            <span class="captcha-text">Бебра</span>
+                          </div>
+                          <button class="reload-btn"> 
+                            <i class="fas fa-redo-alt"></i>
+                          </button>
+                        </div>
+                        <div class="captcha-input">
+                          <input type="text" placeholder="Капча" maxlength="6" spellcheck="false" required>
+                          <div class="status-text-error"></div>
+                          <div class="status-text-okay"></div>
+                          <button class="check-btn">
+                            Отправить
+                          </button>
+                        </div>
+                     </div>
+                  </div>
+                    
+                <button class="btn" type="submit">Зарегистрироваться</button>
+
+                <div id="finaltext"></div>
+        </form>
+    </div>
+    
+</body>
+</html>

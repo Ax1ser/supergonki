@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tektur;
+   }
+
+   html {
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+  }
+
+   .bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    filter: blur(5px);
+    background: url("gonki.jpg") no-repeat center;
+    background-size: cover;
+   }
+
+
+   @media (max-width: 900px) {
+    .container {
+    flex-direction: column;
+    }
+    form,
+    .content {
+    width: 100%;
+    }
+    .btn {
+    flex-direction: column;
+    }
+    .image {
+    height: 70vh;
+    }
+   }
+
+
+   @media (max-width: 425px) {
+ form {
+ padding: 20px;
+ }
+}
+
+  .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+   form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 5%;
+    box-shadow: 
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px magenta,
+        0 0 82px magenta,
+        0 0 92px magenta,
+        0 0 102px magenta,
+        0 0 151px magenta;
+   }
+
+   form {
+    margin-top: 10px;
+    width: 50%;
+    max-width: 50%;
+    background-color: mediumorchid;
+    backdrop-filter: blur(5px);
+    backdrop-filter: opacity(20%);
+   }
+   
+
+   .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Tektur;
+    text-align: center;
+   }
+
+   label {
+    display: block;
+    margin-bottom: 5px;
+   }
+
+   form div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   form div input:focus {
+    box-shadow: 
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px magenta,
+        0 0 82px magenta,
+        0 0 92px magenta,
+        0 0 102px magenta,
+        0 0 151px magenta;
+   }
+
+   form div {
+    position: relative;
+    margin-bottom: 7px;
+   }
+   input:focus {
+    border: 2px solid #cc655c;
+   }
+   
+
+   form div i {
+    position: absolute;
+    padding: 10px;
+   }
+
+   .failure-icon,
+   .error {
+    color: red;
+   }
+
+
+   .success-icon {
+     color: green;
+    }
+
+    .error {
+        font-size: 14.5px;
+        margin-top: 5px;
+    }
+    
+    .success-icon,
+    .failure-icon {
+     right: 0;
+     opacity: 0; 
+     margin-top: 1px;   
+    }
+
+    .requirement-list li.valid i.fa-check {
+      font-size: 0.7rem;
+      color: darkviolet;
+    }
+
+    .requirement-list li.valid span {
+      color: darkviolet;
+      text-decoration: line-through;
+    }
+
+    .requirement-list i {
+      color: darkslateblue;
+    }
+
+    .confirmpass {
+      margin-top: 15px;
+    }
+
+    .check {
+      margin: 20px 0 10px ;
+    }
+
+    .check p {
+      margin-left: 7px;
+    }
+
+    .check .requirement-list li {
+      font-size: 1rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .check .requirement-list li i {
+      width: 15px;
+      color: #aaa;
+      font-size: 0.4rem;
+      margin-top: 10px;
+    }
+
+    .check li span {
+      margin: 10px 0px 0px 25px;
+    }
+   
+
+    button {
+        margin-top: 5px;
+        width: 100%;
+        height: 45px;
+        background-color: darkviolet;
+        border: 2px solid darkviolet;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+       }
+
+       .btn:hover {
+        box-shadow: 
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px magenta,
+        0 0 82px magenta,
+        0 0 92px magenta,
+        0 0 102px magenta,
+        0 0 151px magenta;
+        }
+
+       /*span {
+        color: #f2796e;
+        cursor: pointer;
+       } */
+       
+       button:hover {
+        opacity: 0.8;
+        
+       }
+
+       .container img {
+        width: 100%;
+       }
+
+
+       .image {
+        background-image: url("https://svgshare.com/i/10Rj.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 65%;
+       }
+       .text {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+       }
+
+       input {
+        font-family: Montserrat;
+       }
+
+       .fa-eye{
+        cursor: pointer;
+        right: 1.3vw;
+        margin-top: 2px;
+       }
+
+       .antiDDOS {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+
+       .check {
+        width: 60%;
+        margin-top: -0.7vh;
+       }
+
+       .captcha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+       }
+
+       .captcha {
+        width: 50%;
+        margin-right: 3vw;
+       }
+
+       .captcha h1 {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 3.4vw;
+       }
+
+       .captcha-place {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+       }
+
+       .captcha-place {
+        height: 60px;
+        overflow: hidden;
+       }
+
+       .captcha-place .captcha-image{
+          height: 100%;
+          width: 80%;
+          user-select: none;
+          border-radius: 5px;
+          position: relative;
+          opacity: 0.95;
+       }
+
+       .captcha-place .reload-btn{
+        height: 80%;
+        width: 15%;
+        user-select: none;
+        border-radius: 5px;
+     }
+
+     .captcha-image .captcha-text{
+      position: absolute;
+      left: 2%;
+      top: 25%;
+      width: 100%;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 10px;
+      text-shadow: 0px 0px 2px #b1b1b1;
+      font-family: 'Courgette';
+    }
+
+    .captcha-place .reload-btn {
+      align-self: center;
+      outline: none;
+      border: none;
+      background-color: darkviolet;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 25px;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.1s ease;
+    }
+
+    .captcha-place .reload-btn i{
+      transition: transform 0.3s ease;
+    }
+
+    .captcha-place .reload-btn:hover i{
+      transform: rotate(15deg);
+    }
+
+    .captcha-place .reload-btn {
+      position: relative;
+      margin-bottom: 5px;
+      display: block;
+
+    }
+
+    .captcha-place .reload-btn .fa-redo-alt {
+        cursor: pointer;
+        position: absolute;
+        left:0px;
+        right: 3px;
+        bottom: 0.25vh;
+    }
+
+    .captcha .captcha-input {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   .captcha .captcha-input {
+    width: 100%;
+  }
+
+ .captcha-input input {
+  padding: 0 10px;
+  height: 60%;
+  width: 100%;
+ }
+
+ .captcha .status-text-error{
+  font-size: 14.5px;
+  color: red;
+  display: none;
+  max-height: 5px;
+}
+
+.captcha .status-text-okay{
+  font-size: 14.5px;
+  color: green;
+  display: none;
+  max-height: 5px;
+}
+
+
+
+
+   
+   
+   
+   
+
+
+
+       
